@@ -1,0 +1,8 @@
+<mat-nav-list>
+  <mat-list-item *ngFor="let cat of flatcategories">
+    <a matLine  [routerLink]="['/flashcards/category', cat.name]" routerLinkActive="active" >{{ cat.name }}</a>
+    <button mat-icon-button (click)="showInfo(cat)">
+        <mat-icon>info</mat-icon>
+    </button>
+  </mat-list-item>
+</mat-nav-list>

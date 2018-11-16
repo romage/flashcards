@@ -1,4 +1,4 @@
 export class Category {
   name: string;
-  categories?: Category[];
+  subcategories?: Category[];
 }

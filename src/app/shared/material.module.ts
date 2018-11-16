@@ -12,12 +12,15 @@ import {
   MatSidenavModule, MatStepperModule, MatLineModule,
   MatIconModule, MatRadioModule, MatInputModule,
   MatSelectModule, MatFormFieldModule, MatGridListModule, MatNativeDateModule, MatOptionModule, MatToolbarModule,
-  MatProgressSpinnerModule, MatRippleModule, MatTableModule
+  MatProgressSpinnerModule, MatRippleModule, MatTableModule, MatTreeModule, MatProgressBarModule, MatListModule, MatTabsModule
 } from '@angular/material';
+import {FlexLayoutModule} from '@angular/flex-layout';
 
 @NgModule({
   declarations: [],
   imports: [
+    MatProgressSpinnerModule,
+    MatProgressBarModule,
     MatAutocompleteModule,
     MatBadgeModule,
     MatButtonModule,
@@ -46,9 +49,14 @@ import {
     MatToolbarModule,
     MatProgressSpinnerModule,
     MatRippleModule,
-    MatTableModule
+    MatTableModule,
+    MatListModule,
+    MatTabsModule,
+    FlexLayoutModule,
   ],
   exports: [
+    MatProgressSpinnerModule,
+    MatProgressBarModule,
     MatAutocompleteModule,
     MatBadgeModule,
     MatButtonModule,
@@ -77,7 +85,11 @@ import {
     MatToolbarModule,
     MatProgressSpinnerModule,
     MatRippleModule,
-    MatTableModule
+    MatTableModule,
+    MatTreeModule,
+    MatListModule,
+    MatTabsModule,
+    FlexLayoutModule,
   ]
 })
 export class MaterialModule { }

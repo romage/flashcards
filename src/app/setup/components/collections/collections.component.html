@@ -1,0 +1,14 @@
+
+<div *ngFor="let col of collections" #collection >
+  <h2>
+    <button mat-mini-fab>
+      <mat-icon aria-label="Example icon-button with a heart icon" >edit</mat-icon>
+    </button>
+    <app-add-card [collection]="col"  [hidden]="collection"></app-add-card>
+    {{col.id}}
+  </h2>
+  <div *ngFor="let card of col.cards">
+      {{ card.title }}
+  </div>
+  <hr>
+</div>
